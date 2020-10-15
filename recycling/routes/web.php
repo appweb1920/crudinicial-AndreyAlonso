@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Collector routes
-Route::get('/collector', 'CollectorController@show');
+// Routes of Collector
+Route::get('/collectors', 'App\Http\Controllers\CollectorController@show');
+Route::post('/addCollector', 'App\Http\Controllers\CollectorController@create');
+Route::get('/deleteCollector/{id}', 'App\Http\Controllers\CollectorController@delete');
+Route::get('/selectCollector/{id}', 'App\Http\Controllers\CollectorController@select');
+Route::post('/updateCollector', 'App\Http\Controllers\CollectorController@update');

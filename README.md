@@ -36,7 +36,11 @@
         php artisan migrate
    ```
    Las migraciones se encuentran en: database/migrations/
-5. Ejecutar programa
+5. Crear Modelos
+    ```
+        php artisan make:model <nombreModel>
+   ```
+6. Ejecutar programa
    ``` 
        php artisan serve
    ```

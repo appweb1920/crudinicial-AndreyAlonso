@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a6d6e71-8a23-42e9-8228-54c500e62e9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/app/Http/Controllers/CollectorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/app/Http/Controllers/CollectorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/resources/views/collector/collector.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/collector/collector.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +151,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/recycling/resources/views/collector" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -156,6 +161,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/recycling/resources/views/collector" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -164,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602735625590</updated>
-      <workItem from="1602735627427" duration="3338000" />
+      <workItem from="1602735627427" duration="8074000" />
     </task>
     <servers />
   </component>
@@ -176,5 +186,9 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1713" y="160" key="run.anything.popup/1366.0.1366.768/0.0.1366.728@1366.0.1366.768" timestamp="1602736812946" />
+    <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602743298196">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.0.1366.728@1366.0.1366.768" timestamp="1602743298196" />
   </component>
 </project>

@@ -37,31 +37,27 @@
                     <h5 class="card-title">Collector</h5>
                     <hr>
                     <!-- Formulario de captura Collectors -->
-                    <form action="/addCollector" method="POST">
+                    <form action="/updateCollector" method="POST">
                         <div class="form-grop">
                             <div class="form-group row">
                                 <label class="col-sm-5 col-form-label">Name</label>
                                 <div class="col-sm-6">
                                     @csrf
-                                    <input type="text" class="form-control form-control-sm " name="name"  required/>
+                                    <input  hidden type="text" class="form-control form-control-sm " name="id"  value="{{$collector->id}}" required/>
+
+                                    <input type="text" class="form-control form-control-sm " name="name" value="{{$collector->name}}" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-5 col-form-label">Days to Pick Up</label>
                                 <div class="col-sm-6">
-                                    @csrf
-                                    <input type="text" class="form-control form-control-sm " name="days"  required/>
+                                    <input type="text" class="form-control form-control-sm " name="days"  value="{{$collector->days_to_pick_up}}" required/>
                                 </div>
                             </div>
 
                             <div class="text-right">
-                                <button class="btn btn-outline-danger btn-sm" type="reset">Cancel</button>
-                                <input type="hidden" name="nombreBoton" />
-                                <input type="hidden" name="id" class="id" value='2' />
-                                <button
-                                    class="btn btn-primary  btn-sm ml-2" type="submit" value="Agregar" id="aceptar">
-                                    Add
-                                </button>
+                                <a href="../collectors" class="btn btn-outline-danger btn-sm" type="reset">Cancel</a>
+                                <button class="btn btn-primary  btn-sm ml-2" type="submit"> Update </button>
                             </div>
                         </div>
 
@@ -94,8 +90,8 @@
                             <td>{{$c->days_to_pick_up}}</td>
                             <td>{{$c->created_at}}</td>
                             <td>{{$c->updated_at}}</td>
-                            <td><a href="/selectCollector/{{$c->id}}" class="btn btn-info">Edit</a></td>
-                            <td><a href="/deleteCollector/{{$c->id}}" class="btn btn-danger">Delete</a></td>
+                            <td><a href="../selectCollector/{{$c->id}}" class="btn btn-info">Edit</a></td>
+                            <td><a href="../deleteCollector/{{$c->id}}" class="btn btn-danger">Delete</a></td>
                         </tr>
                     @endforeach
                 @endif
