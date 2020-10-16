@@ -11,16 +11,16 @@
     <title>Collector</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="/collector">Collector</a>
-            <a class="nav-link" href="/recyclingPint">Recycling Point</a>
-            <a class="nav-link" href="/collectorDetail">Collector Detail</a>
+            <a class="nav-link" href="/collectors">Collectors</a>
+            <a class="nav-link" href="/recyclingPoints">Recycling Point</a>
+            <a class="nav-link" href="/recyclingPointDetail">RecyclingPoint Detail</a>
         </div>
     </div>
 </nav>
@@ -74,8 +74,8 @@
         <div class="col col-lg-7 col-md-12 col-sm-12">
 
 
-            <table class="table text-center">
-                <thead class="thead-dark">
+            <table class="table table-sm text-center">
+                <thead class="bg-success text-white">
                 <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Days to Pick Up</th>
@@ -92,10 +92,10 @@
                             <td hidden>{{$c->id}}</td>
                             <td>{{$c->name}}</td>
                             <td>{{$c->days_to_pick_up}}</td>
-                            <td>{{$c->created_at}}</td>
-                            <td>{{$c->updated_at}}</td>
-                            <td><a href="/selectCollector/{{$c->id}}" class="btn btn-info">Edit</a></td>
-                            <td><a href="/deleteCollector/{{$c->id}}" class="btn btn-danger">Delete</a></td>
+                            <td>{{date('Y-m-d',strtotime($c->created_at))}}</td>
+                            <td>{{date('Y-m-d',strtotime($c->updated_at))}}</td>
+                            <td><a href="/selectCollector/{{$c->id}}" class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href="/deleteCollector/{{$c->id}}" class="btn btn-sm btn-danger">Delete</a></td>
                         </tr>
                     @endforeach
                 @endif

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Collector</title>
+    <title>RecyclingPoint</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
@@ -25,39 +25,44 @@
     </div>
 </nav>
 <div class="container">
-    <h1 class="text-center"><b>Collectors</b></h1>
+    <h1 class="text-center"><b>Recycling Points</b></h1>
     <br><br>
     <br>
     <div class="row">
-        <!-- Formulario de captura Collectors -->
+        <!-- Formulario de captura RecyclingPoints -->
         <div class="col col-lg-5 col-md-12 col-sm-12">
             <div class="card" style="width: 25rem;">
 
                 <div class="card-body card-style">
-                    <h5 class="card-title">Collector</h5>
+                    <h5 class="card-title">RecyclingPoint</h5>
                     <hr>
-                    <!-- Formulario de captura Collectors -->
-                    <form action="/updateCollector" method="POST">
+                    <!-- Formulario de captura RecyclingPoints -->
+                    <form action="/updateRecyclingPoint" method="POST">
                         <div class="form-grop">
                             <div class="form-group row">
-                                <label class="col-sm-5 col-form-label">Name</label>
+                                <label class="col-sm-5 col-form-label">Type of garbage</label>
                                 <div class="col-sm-6">
                                     @csrf
-                                    <input  hidden type="text" class="form-control form-control-sm " name="id"  value="{{$collector->id}}" required/>
+                                    <input hidden type="text" class="form-control form-control-sm " name="id" value="{{$recyclingPoint->id}}" required/>
 
-                                    <input type="text" class="form-control form-control-sm " name="name" value="{{$collector->name}}" required/>
+                                    <input type="text" class="form-control form-control-sm " name="type" value="{{$recyclingPoint->type_of_garbage}}" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-5 col-form-label">Days to Pick Up</label>
+                                <label class="col-sm-5 col-form-label">Opening time</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control form-control-sm " name="days"  value="{{$collector->days_to_pick_up}}" required/>
+                                    <input type="time" class="form-control form-control-sm " name="opening" value="{{$recyclingPoint->opening_time}}" required/>
                                 </div>
                             </div>
-
+                            <div class="form-group row">
+                                <label class="col-sm-5 col-form-label">Closing time</label>
+                                <div class="col-sm-6">
+                                    <input type="time" class="form-control form-control-sm " name="closing"  value="{{$recyclingPoint->closing_time}}" required/>
+                                </div>
+                            </div>
                             <div class="text-right">
-                                <a href="../collectors" class="btn btn-outline-danger btn-sm" type="reset">Cancel</a>
-                                <button class="btn btn-primary  btn-sm ml-2" type="submit"> Update </button>
+                                <a href="../recyclingPoints" class="btn btn-outline-danger btn-sm" type="reset">Cancel</a>
+                                <button  class="btn btn-primary  btn-sm ml-2" type="submit" value="Agregar" id="aceptar"> Update </button>
                             </div>
                         </div>
 
@@ -73,25 +78,27 @@
             <table class="table table-sm text-center">
                 <thead class="bg-success text-white">
                 <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Days to Pick Up</th>
-                    <th scope="col">CreatedAt</th>
-                    <th scope="col">UpdatedAt</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Opening</th>
+                    <th scope="col">Closing</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Updated at</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
                 </tr>
                 </thead>
                 <tbody>
-                @if(!is_null($collectors))
-                    @foreach($collectors as $c)
+                @if(!is_null($recyclingPoints))
+                    @foreach($recyclingPoints as $rp)
                         <tr>
-                            <td hidden>{{$c->id}}</td>
-                            <td>{{$c->name}}</td>
-                            <td>{{$c->days_to_pick_up}}</td>
-                            <td>{{date('Y-m-d',strtotime($c->created_at))}}</td>
-                            <td>{{date('Y-m-d',strtotime($c->updated_at))}}</td>
-                            <td><a href="../selectCollector/{{$c->id}}" class="btn btn-sm btn-warning">Edit</a></td>
-                            <td><a href="../deleteCollector/{{$c->id}}" class="btn btn-sm btn-danger">Delete</a></td>
+                            <td hidden>{{$rp->id}}</td>
+                            <td>{{$rp->type_of_garbage}}</td>
+                            <td>{{$rp->opening_time}}</td>
+                            <td>{{$rp->closing_time}}</td>
+                            <td>{{date('Y-m-d',strtotime($rp->created_at))}}</td>
+                            <td>{{date('Y-m-d',strtotime($rp->updated_at))}}</td>
+                            <td><a href="../selectRecyclingPoint/{{$rp->id}}" class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href="../deleteRecyclingPoint/{{$rp->id}}" class="btn btn-sm btn-danger">Delete</a></td>
                         </tr>
                     @endforeach
                 @endif

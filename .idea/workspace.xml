@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6a6d6e71-8a23-42e9-8228-54c500e62e9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recycling/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recycling/app/Http/Controllers/CollectorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/app/Http/Controllers/CollectorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/app/Http/Controllers/RecyClingPointController.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/app/Http/Controllers/RecyClingPointController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recycling/resources/views/collector/collector.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/collector/collector.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/resources/views/collector/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/collector/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/resources/views/recyclingPoint/recyclingPoint.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/recyclingPoint/recyclingPoint.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recycling/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +14,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/recycling/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -174,7 +174,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602735625590</updated>
-      <workItem from="1602735627427" duration="8074000" />
+      <workItem from="1602735627427" duration="8209000" />
+      <workItem from="1602816481577" duration="4135000" />
     </task>
     <servers />
   </component>
@@ -182,6 +183,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1507" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602817312584">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1507" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1366.768/0.0.1366.728@1366.0.1366.768" timestamp="1602817312584" />
+    <state x="1782" y="122" width="524" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602817034042">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1782" y="122" width="524" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1366.0.1366.768/0.0.1366.728@1366.0.1366.768" timestamp="1602817034042" />
+    <state x="1628" y="102" width="988" height="687" key="dock-window-1" timestamp="1602820028848">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1628" y="102" width="988" height="687" key="dock-window-1/1366.0.1366.768/0.0.1366.728@1366.0.1366.768" timestamp="1602820028848" />
     <state x="1713" y="160" key="run.anything.popup" timestamp="1602736812946">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
