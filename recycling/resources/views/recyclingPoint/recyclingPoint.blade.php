@@ -20,7 +20,7 @@
             <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
             <a class="nav-link" href="/collectors">Collectors</a>
             <a class="nav-link" href="/recyclingPoints">Recycling Point</a>
-            <a class="nav-link" href="/recyclingPointDetail">RecyclingPoint Detail</a>
+            <a class="nav-link" href="/collectorDetails">Collector Details</a>
         </div>
     </div>
 </nav>

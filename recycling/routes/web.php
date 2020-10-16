@@ -30,3 +30,10 @@ Route::post('/addRecyclingPoint', 'App\Http\Controllers\RecyClingPointController
 Route::get('/deleteRecyclingPoint/{id}', 'App\Http\Controllers\RecyClingPointController@delete');
 Route::get('/selectRecyclingPoint/{id}', 'App\Http\Controllers\RecyClingPointController@select');
 Route::post('/updateRecyclingPoint', 'App\Http\Controllers\RecyClingPointController@update');
+
+// Routes of Collector Details
+Route::get('/collectorDetails', 'App\Http\Controllers\CollectorDetailController@show');
+Route::post('/addCollectorDetail', 'App\Http\Controllers\CollectorDetailController@create');
+Route::get('/deleteCollectorDetail/{id}', 'App\Http\Controllers\CollectorDetailController@delete');
+//Route::get('/selectRecyclingPoint/{id}', 'App\Http\Controllers\RecyClingPointController@select');
+//Route::post('/updateRecyclingPoint', 'App\Http\Controllers\RecyClingPointController@update');
