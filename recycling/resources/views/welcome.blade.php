@@ -24,6 +24,8 @@
         </style>
     </head>
     <body class="antialiased">
+    @auth
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,9 +36,19 @@
                 <a class="nav-link" href="/collectors">Collectors</a>
                 <a class="nav-link" href="/recyclingPoints">Recycling Point</a>
                 <a class="nav-link" href="/collectorDetails">Collector Details</a>
+                @guest
+                    <a class="nav-link" href="/Logout">Login</a>
+                @else
+                    <a class="nav-link" href="#" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">Logout</a>
+                @endguest
             </div>
         </div>
     </nav>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+    </form>
+    @endauth
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

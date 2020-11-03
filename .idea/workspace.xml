@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a6d6e71-8a23-42e9-8228-54c500e62e9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recycling/app/Http/Controllers/CollectorDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/app/Http/Controllers/CollectorDetailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recycling/resources/views/collector/collector.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/collector/collector.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recycling/resources/views/collector/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/collector/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recycling/resources/views/collectorDetail/collectorDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/collectorDetail/collectorDetail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recycling/resources/views/recyclingPoint/recyclingPoint.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/recyclingPoint/recyclingPoint.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recycling/resources/views/recyclingPoint/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/recyclingPoint/update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recycling/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recycling/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recycling/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/recycling/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +143,7 @@
       <path value="$PROJECT_DIR$/recycling/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/recycling/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/recycling/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/recycling/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1itnBtnzxpWNJ0ldC4icxuor0A6" />
@@ -178,7 +181,10 @@
       <option name="presentableId" value="Default" />
       <updated>1602735625590</updated>
       <workItem from="1602735627427" duration="8209000" />
-      <workItem from="1602816481577" duration="6471000" />
+      <workItem from="1602816481577" duration="6603000" />
+      <workItem from="1602871585612" duration="686000" />
+      <workItem from="1603131079800" duration="927000" />
+      <workItem from="1604348673007" duration="5606000" />
     </task>
     <servers />
   </component>

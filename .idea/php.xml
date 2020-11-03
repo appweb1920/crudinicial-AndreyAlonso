@@ -110,6 +110,7 @@
       <path value="$PROJECT_DIR$/recycling/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/recycling/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/recycling/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/recycling/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
