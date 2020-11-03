@@ -21,7 +21,6 @@
             <a class="nav-link" href="/collectors">Collectors</a>
             <a class="nav-link" href="/recyclingPoints">Recycling Point</a>
             <a class="nav-link" href="/collectorDetails">Collector Details</a>
-            <a class="nav-link" href="/collectorDetails">Collector Details</a>
         </div>
     </div>
 </nav>

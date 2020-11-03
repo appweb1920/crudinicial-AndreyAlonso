@@ -11,6 +11,11 @@ use App\Models\RecyclingPoint;
 
 class CollectorDetailController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('show');
+    }
+
     public function show(){
         $collector = Collector::all();
         $recyclingPoint = RecyclingPoint::all();

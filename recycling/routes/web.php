@@ -39,13 +39,3 @@ Route::get('/deleteCollectorDetail/{id}', 'App\Http\Controllers\CollectorDetailC
 //Route::post('/updateRecyclingPoint', 'App\Http\Controllers\RecyClingPointController@update');
 
 Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//
-//Auth::routes();
-//
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//
-//Auth::routes();
-//
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
